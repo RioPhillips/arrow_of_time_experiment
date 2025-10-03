@@ -2,7 +2,12 @@ import os.path as op
 import argparse
 from psychopy import logging
 import yaml
-from session import HCPMovieELSession
+
+try:
+    from session import HCPMovieELSession
+except Exception as e:
+    print(e)
+
 from pathlib import Path
 import aot
 
@@ -26,12 +31,14 @@ subject, run, eyelink = (
 
 
 def main():
+    print("##### Starting ####")
     settings_dir = base_dir / core_settings["paths"]["settings_path"] / "aottest"
     output_dir = base_dir / core_settings["paths"]["output_path"] / "aottest"
     output_str = f"sub-{str(subject).zfill(2)}_ses-aottest_run-{str(run).zfill(2)}_task-movie"
     runs_input_yaml = settings_dir / \
         f"experiment_settings_sub_{str(subject).zfill(2)}_ses_aottest_run_{str(run).zfill(2)}.yml"
 
+    print("### creating session object ###")
     session_object = HCPMovieELSession(
         output_str=output_str,
         output_dir=output_dir,
@@ -39,8 +46,11 @@ def main():
         run_settings_file=runs_input_yaml,
         eyetracker_on=eyelink,
     )
+    print("session object done")
+    print("create trials")
     session_object.create_trials()
     logging.warn(f"Writing results to: {output_dir / output_str}")
+    print("object run")
     session_object.run()
     session_object.close()
 

@@ -69,6 +69,7 @@ class HCPMovieELSession(PylinkEyetrackerSession):
         eyetracker_on: bool = True,
         training_mode: bool = False,
     ):
+        print("hcpmovieelsession here")
         """Initializes StroopSession object.
 
         Parameters

@@ -1,7 +1,7 @@
 monitor:
   name: 7T
-  width: 69  # width of monitor (in cm)
-  distance: 165  # distance of participant from monitor (in cm)
+  width: 72  # width of monitor (in cm)
+  distance: 192  # distance of participant from monitor (in cm)
   gamma: 1 # 0.454545454545  # specific value for gamma correction
   verbose: True
 
@@ -67,10 +67,10 @@ paths:
   information_list_original: 'information_list_originals.tsv' 
   settings_path: 'data/experiment/settings'
   output_path : 'data/experiment/outputs'     
-  stimuli_path : '/Users/shufanzhang/AOT_stimuli/rescaled_final'     
+  stimuli_path : '/stimuli_videos'     
   oldstimuli_path_spinoza2 : '/experiments/aot_oldvideos'
   oldstimuli_path_spinoza1 : '/experiments/knapen_AOT/aot_oldvideos'
-  stimuli_path_spinoza1 : '/experiments/knapen_AOT/AOT_stimuli/rescaled_final' 
+  stimuli_path_spinoza1 : 'stimuli_videos' 
   stimuli_path_spinoza2 : '/experiments/knapen_AOT/AOT_stimuli/rescaled_final'  
   #stimuli_picture_path_laptop : '/Users/shufanzhang/Documents/PhD/Arrow_of_time/arrow_of_time/pictures'
   stimuli_newpicture_path_laptop : '/Users/shufanzhang/AOT_stimuli/pictures'

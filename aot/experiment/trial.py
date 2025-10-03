@@ -129,7 +129,7 @@ class HCPMovieELTrial(Trial):
             for key, t in events:
                 if self.phase == 0:
                     if self.session.fourcount == 4:
-                        if key == "t":
+                        if key == "s":
                             self.stop_phase()
         '''
         if events is not None:
