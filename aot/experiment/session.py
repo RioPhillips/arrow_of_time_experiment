@@ -111,7 +111,7 @@ class HCPMovieELSession(PylinkEyetrackerSession):
         shrink_factor = self.settings["stimuli"].get("shrink_factor")
         display_size = [l*shrink_factor for l in originalsize]
         self.shiftedpos = (0, -originalsize[1]*(1-shrink_factor)/2)
-
+        self.fixation_offset = (0, self.settings["stimuli"].get("fixation_y_offset_deg") * self.pix_per_deg)
         self.fixation = FixationBullsEye(
             win=self.win,
             outer_radius=max(self.win.size),
@@ -126,8 +126,7 @@ class HCPMovieELSession(PylinkEyetrackerSession):
             dot_perimeter_smoothness=self.settings["stimuli"].get(
                 "fix_perimeter_smooth"
             ),
-            pos=(0, -originalsize[1]*(1-0.7)/2)
-            #pos=self.shiftedpos
+            pos=self.fixation_offset
         )
 
         # self.error_sound = sound.Sound('A')
