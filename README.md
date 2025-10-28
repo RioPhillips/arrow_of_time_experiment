@@ -16,6 +16,7 @@ Now the folder structure for videos is as follows:
     ```
 
 before running the experiment, you need to 
+
 1)clone with "git clone --depth 1 "
 
 2)pip install -e . in the root folder
