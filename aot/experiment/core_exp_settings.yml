@@ -61,16 +61,16 @@ stimuli:
   fix_line_width: 0.75
   movie_size_pix: [1536,1080]
   experiment_movie_duration: 2.5
-  shrink_factor: 0.7
+  shrink_factor: 1
 
 paths:
   information_list_original: 'information_list_originals.tsv' 
   settings_path: 'data/experiment/settings'
   output_path : 'data/experiment/outputs'     
-  stimuli_path : '/stimuli_videos'     
+  stimuli_path : 'D:/dist_windows/stimuli_videos'     
   oldstimuli_path_spinoza2 : '/experiments/aot_oldvideos'
   oldstimuli_path_spinoza1 : '/experiments/knapen_AOT/aot_oldvideos'
-  stimuli_path_spinoza1 : 'stimuli_videos' 
+  stimuli_path_spinoza1 : 'D:/dist_windows/stimuli_videos' 
   stimuli_path_spinoza2 : '/experiments/knapen_AOT/AOT_stimuli/rescaled_final'  
   #stimuli_picture_path_laptop : '/Users/shufanzhang/Documents/PhD/Arrow_of_time/arrow_of_time/pictures'
   stimuli_newpicture_path_laptop : '/Users/shufanzhang/AOT_stimuli/pictures'

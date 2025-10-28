@@ -521,7 +521,7 @@ class HCPMovieELSessionEyetracking(PylinkEyetrackerSession):
 
         if self.eyetracker_on:
             self.calibrate_eyetracker()
-
+            
         self.start_experiment()
         self.fourtcount = 0
 

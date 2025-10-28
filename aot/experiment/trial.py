@@ -123,6 +123,7 @@ class HCPMovieELTrial(Trial):
         self.session.fixation.draw()
 
     def get_events(self):
+        print("debug here is get events!")
         events = super().get_events()
 
         if events is not None:
@@ -130,6 +131,7 @@ class HCPMovieELTrial(Trial):
                 if self.phase == 0:
                     if self.session.fourcount == 4:
                         if key == "s":
+                            print("DEBUG: start key accepted")
                             self.stop_phase()
         '''
         if events is not None:
@@ -201,7 +203,6 @@ class HCPMovieELTrialEyetracking(Trial):
 
     def get_events(self):
         events = super().get_events()
-
         if events is not None:
             for key, t in events:
                 if self.phase == 0:
@@ -299,7 +300,7 @@ class HCPMovieELTrialLearning(Trial):
             for key, t in events:
                 if self.phase == 0:
                     if self.session.fourcount == 4:
-                        if key == "t":
+                        if key == "s":
                             self.stop_phase()
         '''
         if events is not None:
@@ -622,7 +623,7 @@ class DummyWaiterTrial(InstructionTrial):
 
         if events:
             for key, t in events:
-                if key == "t":
+                if key == "s":
                     if self.phase == 0:
                         self.stop_phase()
 

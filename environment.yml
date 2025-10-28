@@ -239,7 +239,7 @@ dependencies:
       - cryptography==46.0.2
       - dukpy==0.2.3
       - egi-pynetstation==1.0.1
-      - exptools2==0.1.dev0
+#      - exptools2==0.1.dev0
       - ffpyplayer==4.5.0
       - google-api-core==2.25.1
       - google-auth==2.41.1

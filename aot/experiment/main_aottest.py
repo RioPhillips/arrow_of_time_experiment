@@ -52,7 +52,9 @@ def main():
     logging.warn(f"Writing results to: {output_dir / output_str}")
     print("object run")
     session_object.run()
+    print("object close")
     session_object.close()
+    print("object closed")
 
 
 if __name__ == "__main__":
