@@ -123,7 +123,6 @@ class HCPMovieELTrial(Trial):
         self.session.fixation.draw()
 
     def get_events(self):
-        print("debug here is get events!")
         events = super().get_events()
 
         if events is not None:
@@ -131,7 +130,6 @@ class HCPMovieELTrial(Trial):
                 if self.phase == 0:
                     if self.session.fourcount == 4:
                         if key == "s":
-                            print("DEBUG: start key accepted")
                             self.stop_phase()
         '''
         if events is not None:
