@@ -59,10 +59,10 @@ stimuli:
   fix_line_color: [1, 1, 1]
   fix_fill_color: [-1, -1, -1]
   fix_line_width: 0.75
-  movie_size_pix: [1536,1080]
+  movie_size_pix: [1920,1080]
   experiment_movie_duration: 2.5
   shrink_factor: 1
-  fixation_y_offset_deg: -1.2
+  fixation_y_offset: 10 # y offset as percentage of scree size
 
 paths:
   information_list_original: 'information_list_originals.tsv' 

@@ -109,9 +109,10 @@ class HCPMovieELSession(PylinkEyetrackerSession):
 
         originalsize = self.settings["stimuli"].get("movie_size_pix")
         shrink_factor = self.settings["stimuli"].get("shrink_factor")
+        y_offset = self.settings["stimuli"].get("fixation_y_offset")
         display_size = [l*shrink_factor for l in originalsize]
         self.shiftedpos = (0, -originalsize[1]*(1-shrink_factor)/2)
-        self.fixation_offset = (0, self.settings["stimuli"].get("fixation_y_offset_deg") * self.pix_per_deg)
+        self.fixation_offset = (0, -self.win.size[1] * 1/y_offset)
         self.fixation = FixationBullsEye(
             win=self.win,
             outer_radius=max(self.win.size),
