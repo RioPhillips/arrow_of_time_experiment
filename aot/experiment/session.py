@@ -126,7 +126,8 @@ class HCPMovieELSession(PylinkEyetrackerSession):
             dot_perimeter_smoothness=self.settings["stimuli"].get(
                 "fix_perimeter_smooth"
             ),
-            pos=self.shiftedpos
+            pos=(0, -originalsize[1]*(1-0.7)/2)
+            #pos=self.shiftedpos
         )
 
         # self.error_sound = sound.Sound('A')
