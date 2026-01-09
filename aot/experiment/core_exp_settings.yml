@@ -1,7 +1,7 @@
 monitor:
   name: 7T
   width: 72  # width of monitor (in cm)
-  distance: 192  # distance of participant from monitor (in cm)
+  distance: 192  # distance from participant to monitor (in cm)
   gamma: 1 # 0.454545454545  # specific value for gamma correction
   verbose: True
 
@@ -19,7 +19,7 @@ eyetracker:
     calibration_area_proportion: 0.4 0.4
     validation_area_proportion: 0.4 0.4
     sample_rate: 1000
-    
+
 
 design:
   n_trials: 1
