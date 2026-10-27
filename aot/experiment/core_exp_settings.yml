@@ -1,7 +1,8 @@
 monitor:
   name: 7T
   width: 72  # width of monitor (in cm)
-  distance: 192  # distance from participant to monitor (in cm)
+  distance: 195  # distance from participant to monitor (in cm)
+                 # 191cm to mirror + 4cm to eye
   gamma: 1 # 0.454545454545  # specific value for gamma correction
   verbose: True
 
